@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama Yo Quiero</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-info">
+      <div class="container-fluid">
+        <span class="navbar-text">
+          Mamá Yo Quiero
+        </span>
+      </div>
+    </nav>
+  </header>
+  <main class="main-index">
+    <h1 class="título">Selecciona el tamaño de helado</h1>
+    <div class="tamaño">
+      <button id="1kg" onclick="mostrarSaboresKilo()">1kg</button>
+      <div class="sabores" id="infoSabores" style="display:none">
+        <h2>Sabores Disponibles</h2>
+        <ul>
+          <li>Chocolate</li>
+          <li>Dulce de leche</li>
+          <li>Frutilla</li>
+          <li>Limón</li>
+          <li>Americana</li>
+          <li>Vainilla</li>
+          <li>Banana Split</li>
+          <li>Menta Granizada</li>
+        </ul>
+        <button id="ingresaSabores" onclick="ingresaSabores()">Ingresá tus sabores</button>
+      </div>
+    </div>
+    <div class="tamaño">
+      <button id="1/2kg" onclick="mostrarSaboresMedio()">1/2kg</button>
+      <div class="sabores" id="infoSabores2" style="display:none">
+        <h2>Sabores Disponibles</h2>
+        <ul class="lista">
+          <li>Chocolate</li>
+          <li>Dulce de leche</li>
+          <li>Frutilla</li>
+          <li>Limón</li>
+          <li>Americana</li>
+          <li>Vainilla</li>
+          <li>Banana Split</li>
+          <li>Menta Granizada</li>
+        </ul>
+        <button id="ingresaSabores2" onclick="ingresaSaboresMedio()">Ingresá tus sabores</button>
+      </div>
+    </div>
+    <div class="tamaño">
+      <button id="1/4kg" onclick="mostrarSaboresCuarto()">1/4kg</button>
+      <div class="sabores" id="infoSabores3" style="display:none">
+        <h2>Sabores Disponibles</h2>
+        <ul>
+          <li>Chocolate</li>
+          <li>Dulce de leche</li>
+          <li>Frutilla</li>
+          <li>Limón</li>
+          <li>Americana</li>
+          <li>Vainilla</li>
+          <li>Banana Split</li>
+          <li>Menta Granizada</li>
+        </ul>
+        <button id="ingresaSabores3" onclick="ingresaSaboresCuarto()">Ingresá tus sabores</button>
+      </div>
+    </div>
+    <div class="precio">
+      <button id="precio" onclick="precio()">Calcula el precio</button>
+    </div>
+  </main>
+  <footer></footer>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="funciones.js"></script>
+</body>
+
+</html>

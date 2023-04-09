@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*RESET*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/*SECTIONS*/
+.navbar-text {
+  font-weight: bold; }
+
+.main-index {
+  background-image: url(https://bluebell.com.ar/carta/wp-content/uploads/kilohelado.jpg);
+  height: auto; }
+
+.título {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 20px; }
+
+.tamaño {
+  text-align: center;
+  padding: 20px; }
+
+button {
+  width: 100px;
+  height: 100px; }
+
+ul {
+  padding: 0px 2rem 0px 0px;
+  list-style: none; }
+
+.sabores {
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px auto 20px auto;
+  width: 400px;
+  padding: 20px; }
+
+.precio {
+  text-align: center;
+  margin: 40px 0px 0px 0px;
+  padding-bottom: 20px; }
