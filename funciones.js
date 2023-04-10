@@ -4,12 +4,10 @@ function mostrarSabores(sabores){
         document.getElementById("infoSabores1").style.display="";
     }else if(sabores == 2){
         document.getElementById("infoSabores2").style.display="";
-    }else if(sabores == 3){
+    }else{
         document.getElementById("infoSabores3").style.display="";
     }
-    else{
-        alert("Elegí los sabores");
-    }
+
 }
 
 function mostrar(tamaño){
@@ -26,14 +24,11 @@ function mostrar(tamaño){
         }
         alert("Los sabores que elegiste son" + " " + eleccion);
     }
-    else if(tamaño == 3){
+    else{
         for(cantidad=0; cantidad<2; cantidad++){
             eleccion = prompt("Elegí los sabores") + " " + eleccion;
         }
         alert("Los sabores que elegiste son" + " " + eleccion);
-    }
-    else{
-        alert("Elegí el tamaño")
     }
 }
 
