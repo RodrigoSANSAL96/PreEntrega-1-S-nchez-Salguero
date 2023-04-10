@@ -1,50 +1,41 @@
-let tamaño=0;
-
-//ESTE ES KILO
-function mostrarSaboresKilo(){
-    document.getElementById("infoSabores").style.display="";
-    tamaño = 1;
-}
-let eleccion= " ";
-
-function ingresaSabores(){
-    for(cantidad=0; cantidad<4; cantidad++){
-        eleccion = prompt("elegi los sabores") + " " + eleccion;
+let eleccion = " ";
+function mostrarSabores(sabores){
+    if(sabores == 1){
+        document.getElementById("infoSabores1").style.display="";
+    }else if(sabores == 2){
+        document.getElementById("infoSabores2").style.display="";
+    }else if(sabores == 3){
+        document.getElementById("infoSabores3").style.display="";
     }
-    alert("Los sabores que elejiste son" + " " + eleccion);
-}
-
-//ESTE ES MEDIO KILO
-
-
-function mostrarSaboresMedio(){
-    document.getElementById("infoSabores2").style.display="";
-    tamaño = 2;
-}
-let eleccion2= " ";
-
-function ingresaSaboresMedio(){
-    for(cantidad=0; cantidad<3; cantidad++){
-        eleccion2 = prompt("elegi los sabores") + " " + eleccion2;
+    else{
+        alert("Elegí los sabores");
     }
-    alert("Los sabores que elegiste son" + " " + eleccion2);
 }
 
-//ESTE ES CUARTO
-function mostrarSaboresCuarto(){
-    document.getElementById("infoSabores3").style.display="";
-    tamaño = 3;
-}
-let eleccion3= " ";
-
-function ingresaSaboresCuarto(){
-    for(cantidad=0; cantidad<2; cantidad++){
-        eleccion3 = prompt("elegi los sabores") + " " + eleccion3;
+function mostrar(tamaño){
+    eleccion = " ";
+    if(tamaño == 1){
+        for(cantidad=0; cantidad<4; cantidad++){
+            eleccion = prompt("Elegí los sabores") + " " + eleccion;
+        }
+        alert("Los sabores que elegiste son" + " " + eleccion);
     }
-    alert("Los sabores que elegiste son" + " " + eleccion3);
+    else if(tamaño == 2){
+        for(cantidad=0; cantidad<3; cantidad++){
+            eleccion = prompt("Elegí los sabores") + " " + eleccion;
+        }
+        alert("Los sabores que elegiste son" + " " + eleccion);
+    }
+    else if(tamaño == 3){
+        for(cantidad=0; cantidad<2; cantidad++){
+            eleccion = prompt("Elegí los sabores") + " " + eleccion;
+        }
+        alert("Los sabores que elegiste son" + " " + eleccion);
+    }
+    else{
+        alert("Elegí el tamaño")
+    }
 }
-
-
 
 function precio(){
     if (tamaño == 1){

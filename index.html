@@ -13,7 +13,7 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 <body>
-  <header>
+  <header> 
     <nav class="navbar bg-info">
       <div class="container-fluid">
         <span class="navbar-text">
@@ -25,8 +25,8 @@
   <main class="main-index">
     <h1 class="título">Selecciona el tamaño de helado</h1>
     <div class="tamaño">
-      <button id="1kg" onclick="mostrarSaboresKilo()">1kg</button>
-      <div class="sabores" id="infoSabores" style="display:none">
+      <button onclick="mostrarSabores(1)">1kg</button>
+      <div class="sabores" id="infoSabores1" style="display:none">
         <h2>Sabores Disponibles</h2>
         <ul>
           <li>Chocolate</li>
@@ -38,11 +38,11 @@
           <li>Banana Split</li>
           <li>Menta Granizada</li>
         </ul>
-        <button id="ingresaSabores" onclick="ingresaSabores()">Ingresá tus sabores</button>
+        <button id="tamaño" onclick="mostrar(1)">Elegí los sabores</button>
       </div>
     </div>
     <div class="tamaño">
-      <button id="1/2kg" onclick="mostrarSaboresMedio()">1/2kg</button>
+      <button onclick="mostrarSabores(2)">1/2kg</button>
       <div class="sabores" id="infoSabores2" style="display:none">
         <h2>Sabores Disponibles</h2>
         <ul class="lista">
@@ -55,11 +55,11 @@
           <li>Banana Split</li>
           <li>Menta Granizada</li>
         </ul>
-        <button id="ingresaSabores2" onclick="ingresaSaboresMedio()">Ingresá tus sabores</button>
+        <button id="tamaño" onclick="mostrar(2)">Elegí los sabores</button>
       </div>
     </div>
     <div class="tamaño">
-      <button id="1/4kg" onclick="mostrarSaboresCuarto()">1/4kg</button>
+      <button onclick="mostrarSabores(3)">1/4kg</button>
       <div class="sabores" id="infoSabores3" style="display:none">
         <h2>Sabores Disponibles</h2>
         <ul>
@@ -72,7 +72,7 @@
           <li>Banana Split</li>
           <li>Menta Granizada</li>
         </ul>
-        <button id="ingresaSabores3" onclick="ingresaSaboresCuarto()">Ingresá tus sabores</button>
+        <button id="tamaño" onclick="mostrar(3)">Elegí los sabores</button>
       </div>
     </div>
     <div class="precio">
